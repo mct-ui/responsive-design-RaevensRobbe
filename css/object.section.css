@@ -4,7 +4,7 @@
     Creates vertical whitespace between adjacent sections inside a row
 */
 
-.o-section {
+.o-section{
 }
 
 .o-section + .o-section {
