@@ -220,6 +220,10 @@ a:focus {
     display: flow-root;
 }
 
+.o-row—neutral-x-light{
+    background-color: #F7F7F7 !important;
+}
+
 /* size modifiers */
 
 .o-row--lg {
