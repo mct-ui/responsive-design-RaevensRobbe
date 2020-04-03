@@ -2,22 +2,23 @@
   #FONTS
 \*------------------------------------*/
 @font-face{
-    font-family: "HK Grotesk Web";
-    font-weight: 200;
-    src: url("../fonts/hkgrotesk-light-webfont.woff2") format("woff2"),
-    url("../fonts/hkgrotesk-light-webfont.woff") format("woff");
+    font-family:"HK Grotesk Web";
+    font-weight:200;
+    src:url("../fonts/hkgrotesk-light-webfont.woff2") format("woff2"),
+        url("../fonts/hkgrotesk-light-webfont.woff") format("woff");
+}
+
+@font-face{
+    font-family:"HK Grotesk Web";
+    font-weight:400;
+    src:url("../fonts/hkgrotesk-regular-webfont.woff2") format("woff2"),
+        url("../fonts/hkgrotesk-regular-webfont.woff") format("woff");
 }
 @font-face{
-    font-family: "HK Grotesk Web";
-    font-weight: 400;
-    src: url("../fonts/hkgrotesk-regular-webfont.woff2") format("woff2"),
-    url("../fonts/hkgrotesk-regular-webfont.woff") format("woff");
-}
-@font-face{
-    font-family: "HK Grotesk Web";
-    font-weight: 600;
-    src: url("../fonts/hkgrotesk-medium-webfont.woff2") format("woff2"),
-    url("../fonts/hkgrotesk-medium-webfont.woff") format("woff");
+    font-family:"HK Grotesk Web";
+    font-weight:500;
+    src:url("../fonts/hkgrotesk-medium-webfont.woff2") format("woff2"),
+        url("../fonts/hkgrotesk-medium-webfont.woff") format("woff");
 }
 
 
@@ -34,7 +35,7 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    font-family: Helvetica, arial, sans-serif, "HK Grotesk Web";
+    font-family: "HK Grotesk Web",Helvetica, arial, sans-serif;
     color: #202024;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -194,9 +195,12 @@ a:focus {
     background-color: #F7F7F7;
 }
 
-.o-row--gradient-1{
-    background: linear-gradient(to top right, green, blue);
-    color: #fff;
+.o-row--gradient {
+    position: relative;
+    padding: 24px 24px 0;
+    display: flow-root;
+    color:white;
+    background:linear-gradient(to top, #5051DB 0%,#3887F7 100%); 
 }
 /* size modifiers */
 
@@ -589,6 +593,16 @@ c-header__nav {
 .c-link-cta:hover::after {
     transform: scaleX(1);
     background-color: #3E3EA8;
+}
+
+/* inversed */
+.c-link-cta--inverse,
+.c-link-cta--inverse:visited,
+.c-link-cta--inverse:active{
+    color: #FFF;
+}
+.c-link-cta-inverse.c-link-cta:hover::after{
+    background-color: #FFF;
 }
 
 /*------------------------------------*\
