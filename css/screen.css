@@ -532,10 +532,10 @@ a:focus {
     .c-nav__link {
     padding: 8px 16px;
     }
+    .c-nav--meta{
+        font-size: 16px;
+    }
    }
-.c-nav--meta{
-    font-size: 16px;
-}
 /*
     Component: header
     ---
